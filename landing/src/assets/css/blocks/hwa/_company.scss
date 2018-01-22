@@ -1,0 +1,62 @@
+.hwa-company {
+  padding: 0 0 0 140px;
+}
+
+.hwa-company__list {
+  position: relative;
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    width: 107px;
+    height: 85px;
+    position: absolute;
+  }
+
+  &:before {
+    top: -50px;
+    left: -90px;
+    background: url('../../img/ico-quote-start.png') no-repeat 0 0;
+  }
+
+  &:after {
+    bottom: -50px;
+    right: -90px;
+    background: url('../../img/ico-quote-end.png') no-repeat 0 0;
+  }
+}
+
+.hwa-company__item {
+  margin: 0 0 20px 0;
+  position: relative;
+  z-index: 1;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .hwa-company {
+    padding-right: 10px;
+  }
+
+  .hwa-company__list {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+
+@media all and (max-width: 920px) {
+  .hwa-company {
+    padding: 170px 10px 0 95px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .hwa-company {
+    padding: 100px 20px 0 20px;
+  }
+}

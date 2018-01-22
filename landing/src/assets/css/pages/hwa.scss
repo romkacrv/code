@@ -1,0 +1,44 @@
+@import 'bourbon';
+
+.page__inner {
+  position: relative;
+
+  .page--hwa & {
+    padding: 15px 0 140px 160px;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .page__inner {
+    .page--hwa & {
+      padding: 15px 0 140px 0px;
+    }
+  }
+}
+
+.aside__ico--hwa {
+  width: 55px;
+  height: 42px;
+  margin: 0 auto 15px auto;
+}
+
+.aside__ico--company {
+  background: url('../../img/ico-hwa-aside-company.png') no-repeat 0 0;
+}
+
+.aside__ico--team {
+  background: url('../../img/ico-hwa-aside-contacts.png') no-repeat 0 0;
+}
+
+.aside__ico--contacts {
+  background: url('../../img/ico-hwa-aside-team.png') no-repeat 0 0;
+}
+
+.aside__ico--tech {
+  background: url('../../img/ico-hwa-aside-tech.png') no-repeat 0 0;
+}
+
+@import '../blocks/hwa/company';
+@import '../blocks/hwa/team';
+@import '../blocks/hwa/tech';
+@import '../blocks/hwa/contacts';

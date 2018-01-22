@@ -1,0 +1,76 @@
+.message {
+  background: #efffde;
+  border-radius: 20px 20px 20px 0;
+  padding: 25px;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/ico-item-triangle.png') no-repeat 0 0;
+    width: 18px;
+    height: 26px;
+    bottom: 0;
+    left: -18px;
+  }
+
+  p {
+    margin: 0 0 20px 0;
+    line-height: 30px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    + ul {
+      margin-top: -10px !important;
+    }
+  }
+
+  ul {
+    margin: 0 0 20px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  li {
+    position: relative;
+    padding: 0 0 0 30px;
+    line-height: 30px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:before {
+      content: '';
+      width: 20px;
+      height: 14px;
+      display: block;
+      left: 0;
+      background: url('../img/ico-list.png') no-repeat 0 0;
+      position: absolute;
+      top: 5px;
+    }
+  }
+
+  h3 {
+    font-family: montserratbold;
+    margin: 0 0 20px 0;
+  }
+}
+
+.message--ico-robo {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/ico-robo.png') no-repeat 0 0;
+    width: 58px;
+    height: 58px;
+    left: -85px;
+    bottom: 0;
+  }
+}

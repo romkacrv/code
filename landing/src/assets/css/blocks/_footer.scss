@@ -1,0 +1,104 @@
+.footer {
+  max-width: 1170px;
+  height: 120px;
+  margin: 90px auto 0 auto;
+  background: #e96946;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+
+.footer__social {
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+.footer__social-item {
+  display: inline-block;
+  margin: 0 5px;
+
+  &:hover {
+    a {
+      background: #fff;
+    }
+  }
+
+  a {
+    width: 46px;
+    height: 46px;
+    background: #fa9478;
+    display: block;
+    border-radius: 50px;
+    @include transition(all 0.2s linear);
+    position: relative;
+  }
+}
+
+.footer__social-item > a:hover, .footer__social-item--active {
+
+  .footer__social-ico--fb {
+    background: url('../img/footer-social-fb-active.png') no-repeat 0 0;
+  }
+
+  .footer__social-ico--twt {
+    background: url('../img/footer-social-twt-active.png') no-repeat 0 0;
+  }
+
+  .footer__social-ico--in {
+    background: url('../img/footer-social-in-active.png') no-repeat 0 0;
+  }
+
+  .footer__social-ico--inst {
+    background: url('../img/footer-social-inst-active.png') no-repeat 0 0;
+  }
+
+  .footer__social-ico--git {
+    background: url('../img/footer-social-git-active.png') no-repeat
+  }
+}
+
+.footer__social-item--active {
+  a {
+    background: #fff;
+  }
+}
+
+.footer__social-ico {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer__social-ico--fb {
+  background: url('../img/footer-social-fb.png') no-repeat 0 0;
+  width: 8px;
+  height: 17px;
+}
+
+.footer__social-ico--twt {
+  background: url('../img/footer-social-twt.png') no-repeat 0 0;
+  width: 16px;
+  height: 14px;
+}
+
+.footer__social-ico--in {
+  background: url('../img/footer-social-in.png') no-repeat 0 0;
+  width: 19px;
+  height: 17px;
+}
+
+.footer__social-ico--inst {
+  background: url('../img/footer-social-inst.png') no-repeat 0 0;
+  width: 17px;
+  height: 17px;
+}
+
+.footer__social-ico--git {
+  background: url('../img/footer-social-git.png') no-repeat 0 0;
+  width: 14px;
+  height: 17px;
+}
+
+.footer__copyright {
+  color: #fff;
+}

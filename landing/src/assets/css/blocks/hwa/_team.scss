@@ -1,0 +1,158 @@
+.hwa-team__list {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+//.hwa-team__column {
+//
+//  &:nth-child(odd) {
+//    margin: 50px 0 0 0;
+//  }
+//}
+
+.hwa-team__item {
+  width: 224px;
+  height: 290px;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0 0 20px 20px;
+
+  .hwa__team-item-card {
+    margin: 18px 0 0 18px;
+
+    img {
+      width: 86px;
+      height: 86px;
+      float: left;
+      margin-right: 12px;
+      margin-bottom: 18px;
+    }
+
+    .person-name {
+      margin: 14px 0 10px 0;
+
+      font-size: 18px;
+      text-align: left;
+      letter-spacing: 0.42px;
+      color: #ff5151;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    p {
+      margin-left: 15px;
+      color: #ff5151;
+      text-align: left;
+      font-weight: 700;
+      line-height: 18.51px;
+      font-size: 14px;
+    }
+  }
+
+  .hwa__team-item-info {
+    clear: both;
+
+    p {
+      margin: 10px 15px;
+      font-size: 12px;
+      text-align: center;
+      line-height: 18.51px;
+      letter-spacing: 0.6px;
+      color: #343b46;
+    }
+  }
+}
+
+.hwa-team__item:hover{
+  box-shadow: 0px 8px 20px #a5a7aa;
+}
+
+@media all and (min-width: 1200px) {
+  //костыль для нижних 2х элементов
+  .hwa-team__item:nth-last-child(1){
+    margin-right: 250px;
+  }
+
+  .hwa-team__item:nth-last-child(2){
+    margin-left: 270px;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .hwa-team {
+    padding: 170px 10px 0 10px;
+  }
+}
+
+//-----------------
+@media all and (max-width: 768px) {
+  .hwa-team__item {
+    max-width: 346px;
+    width: 340px;
+    height: auto;
+    padding: 0 5px 0 0;
+    //margin: 0 0 20px 20px;
+
+    .hwa__team-item-card {
+    //  margin: 18px 0 0 18px;
+
+      img {
+        width: 133px;
+        height: 133px;
+        margin-right: 12px;
+      }
+
+      .person-name {
+        margin: 14px 0 10px 0;
+        font-size: 23px;
+      }
+
+      p {
+        font-weight: 700;
+        line-height: 24px;
+        font-size: 16px;
+      }
+    }
+
+    .hwa__team-item-info {
+      p {
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+//-----------------
+
+@media all and (max-width: 640px) {
+  .hwa-team {
+    padding: 100px 10px 0 10px;
+  }
+
+  .hwa-team__item{
+    margin: 0 0 20px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .hwa-team__item {
+    .hwa__team-item-card {
+      img {
+        width: 118px;
+        height: 118px;
+      }
+
+      .person-name {
+        margin: 14px 0 10px 0;
+        font-size: 23px;
+      }
+    }
+  }
+}

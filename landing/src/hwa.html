@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<div class="page page--hwa">
+    @require('./blocks/header.html')
+    <div class="page__inner">
+        <aside class="aside">
+            <nav class="aside__nav">
+                <ul class="aside__list">
+                    <li class="aside__item  aside__item--active" data-page-item-id="hwa-item-company">
+                        <div class="aside__ico aside__ico--hwa aside__ico--company"></div>
+                        <p>Our company</p>
+                    </li>
+                    <li class="aside__item" data-page-item-id="hwa-item-team">
+                        <div class="aside__ico aside__ico--hwa aside__ico--team"></div>
+                        <p>Our team</p>
+                    </li>
+                    <li class="aside__item" data-page-item-id="hwa-item-contacts">
+                        <div class="aside__ico aside__ico--hwa aside__ico--contacts"></div>
+                        <p>Contacts</p>
+                    </li>
+                    <li class="aside__item" data-page-item-id="hwa-item-tech">
+                        <div class="aside__ico aside__ico--hwa aside__ico--tech"></div>
+                        <p>Technologies</p>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="page__items">
+            <div class="page__item page__item" id="hwa-item-company">
+                @require('./blocks/hwa/company.html')
+            </div>
+            <div class="page__item page__item page__item--hidden" id="hwa-item-team">
+                @require('./blocks/hwa/team.html')
+            </div>
+            <div class="page__item page__item page__item--hidden" id="hwa-item-contacts">
+                @require('./blocks/hwa/contacts.html')
+            </div>
+            <div class="page__item page__item page__item--hidden" id="hwa-item-tech">
+                @require('./blocks/hwa/tech.html')
+            </div>
+        </div>
+    </div>
+</div>
+@require('./blocks/footer.html')
+</body>
+</html>

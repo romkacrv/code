@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<div class="page page--home">
+    @require('./blocks/header.html')
+    <div class="page__inner">
+        <div class="home">
+            <div class="home__info">
+                <div class="home__info-title">
+                    <h1>Are you <br />
+                      blind to our <br />
+                        <span>chat?</span></h1>
+                    <h2>HOW CAN WE HELP YOU?</h2>
+                </div>
+
+                <div class="home__info-text-wrapper">
+                    <div class="home__info-text">
+                        <p> We are young, dynamic, ambitious, and well prepared team.
+                            There were only 11 members in our team when we founded Chart Board.
+                            It was fall 2017. We worked up to the collar day by day.
+                            And the passion for the services we provide have helped our agency grow the
+                            number of employees, resources, experience, and results.
+                        </p>
+                        <p>We are not just another web services agency, we are the right
+                            partner for your online business.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home__img">
+                <img src="assets/img/content-home-img.png" alt="img"/>
+            </div>
+        </div>
+    </div>
+</div>
+@require('./blocks/footer.html')
+</body>
+</html>

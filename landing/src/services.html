@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<div class="page page--services">
+  @require('./blocks/header.html')
+  <div class="page__inner">
+    <aside class="aside">
+      <nav class="aside__nav">
+        <ul class="aside__list">
+          <li class="aside__item  aside__item--active" data-page-item-id="services-item-aff">
+            <div class="aside__ico aside__ico--services aside__ico--aff"></div>
+            <p>Affiliate system</p>
+          </li>
+          <li class="aside__item" data-page-item-id="services-item-crm">
+            <div class="aside__ico aside__ico--services aside__ico--crm"></div>
+            <p>CRM system</p>
+          </li>
+          <li class="aside__item" data-page-item-id="services-item-cms">
+            <div class="aside__ico aside__ico--services aside__ico--cms"></div>
+            <p>CMS Systems</p>
+          </li>
+          <li class="aside__item" data-page-item-id="services-item-blog">
+            <div class="aside__ico aside__ico--services aside__ico--blog"></div>
+            <p>Sivashov's blog</p>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="page__items">
+      <div class="page__item page__item" id="services-item-aff">
+        @require('./blocks/services/aff.html')
+      </div>
+      <div class="page__item page__item page__item--hidden" id="services-item-crm">
+        @require('./blocks/services/crm.html')
+      </div>
+      <div class="page__item page__item  page__item--hidden" id="services-item-cms">
+        @require('./blocks/services/cms.html')
+      </div>
+      <div class="page__item page__item page__item--hidden" id="services-item-blog">
+        @require('./blocks/services/blog.html')
+      </div>
+    </div>
+  </div>
+</div>
+@require('./blocks/footer.html')
+</body>
+</html>

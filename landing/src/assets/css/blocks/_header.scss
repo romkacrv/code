@@ -1,0 +1,225 @@
+.header {
+  margin: 0 auto;
+  background: #fff;
+  height: 90px;
+  box-shadow: 12px 0px 103px #d2d4d8;
+  max-width: 1000px;
+  border-radius: 0 0 5px 5px;
+  position: fixed;
+  top: 0;
+  @include transition(top 0.2s linear);
+  z-index: 2;
+  left: 0;
+  right: 0;
+}
+
+.header--hide {
+  top: -140px;
+}
+
+.header__logo {
+  display: inline-block;
+  position: absolute;
+  left: 32px;
+  top: 10px;
+}
+
+.header__nav-list {
+  text-align: center;
+  padding: 30px 150px 0 150px;
+}
+
+.header__nav-list-item {
+  display: inline-block;
+}
+
+.header__nav-list-item {
+  padding: 0 30px;
+
+  &:hover {
+
+    a {
+      color: #e85252;
+      border-bottom: 2px solid #e85252;
+      padding-bottom: 41px;
+      transition: top 1s ease-out 0.1s;
+    }
+  }
+
+  a {
+    color: #262e40;
+    font-size: 18px;
+    text-decoration: none;
+    @include transition(all 0.2s linear);
+  }
+}
+
+.header__nav-list-item--active {
+  a {
+    color: #e85252;
+  }
+}
+
+.header__search {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.header__search-icon {
+  cursor: pointer;
+  background: url('../img/header-search-icon.png') no-repeat 0 0;
+  width: 46px;
+  height: 46px;
+}
+
+.mobile-header__nav {
+  display: none;
+}
+
+@media (max-width: 920px) {
+
+  .header {
+    &.toggled{
+      -webkit-filter: blur(8px);
+      -moz-filter: blur(8px);
+      -o-filter: blur(8px);
+      -ms-filter: blur(8px);
+      filter: blur(8px);
+
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .header__search {
+    right: 10px;
+    top: 15px;
+  }
+
+  .header__mobile-menu-icon {
+    cursor: pointer;
+    background: url('../img/header-mobile-menu-icon.png') no-repeat 0 0;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+  }
+
+  .header__search-icon {
+    background: url('../img/header-mobile-search-icon.png') no-repeat 0 0;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+
+    position: absolute;
+    right: 75px;
+    top: 0;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  // mobile navigation
+  .mobile-header__nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    &.toggled {
+      display: inline-block;
+      z-index: 10;
+
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+
+      -webkit-opacity: 1;
+      -moz-opacity: 1;
+      opacity: 1;
+
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+
+    &-list {
+      padding: 2em 0 0 0;
+      &-item {
+        display: block;
+
+        a {
+          font-size: 1.250em;
+          padding: 1em 0;
+          font-weight: 300;
+          display: inline-block;
+          border-bottom: 1px solid #e85252;
+        }
+      }
+    }
+  }
+
+  .mobile-header__nav-list {
+    text-align: center;
+  }
+
+  .mobile-header__nav-list-item {
+    &:hover {
+
+      a {
+        color: #e85252;
+        border-bottom: 2px solid #e85252;
+        padding-bottom: 41px;
+        transition: top 1s ease-out 0.1s;
+      }
+    }
+
+    a {
+      color: #262e40;
+      font-size: 2em;
+      text-decoration: none;
+      @include transition(all 0.2s linear);
+    }
+  }
+
+  .page__inner{
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    &.toggled{
+      -webkit-filter: blur(8px);
+      -moz-filter: blur(8px);
+      -o-filter: blur(8px);
+      -ms-filter: blur(8px);
+      filter: blur(8px);
+
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+  }
+}

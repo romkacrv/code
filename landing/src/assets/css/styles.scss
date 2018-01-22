@@ -1,0 +1,244 @@
+@import 'neat';
+@import 'bourbon';
+@import 'helpers/reset';
+@import 'helpers/fonts';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/message';
+
+::-webkit-input-placeholder {
+  font-family: montserratmedium;
+  color: #262e40;
+}
+:-moz-placeholder {
+  font-family: montserratmedium;
+  color: #262e40;
+}
+::-moz-placeholder {
+  font-family: montserratmedium;
+  color: #262e40;
+}
+:-ms-input-placeholder {
+  font-family: montserratmedium;
+  color: #262e40;
+}
+
+input, textarea {
+  outline: none;
+  font-family: montserratmedium;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+body {
+  background: #e0e2e6;
+  font-family: montserratmedium;
+  padding: 105px 0 0 0;
+  color: #262e40;
+}
+
+.page {
+  max-width: 1170px;
+  margin: 0 auto -90px auto;
+  min-height: 100%;
+}
+
+.aside {
+  margin: 140px 0 0 0;
+  position: fixed;
+  left: calc((100% - 1170px)/2)
+  //position: absolute;
+  //left: 0;
+}
+
+.aside__nav--sticky {
+  position: fixed;
+  top:0;
+  margin: 15px 0 0 0;
+  z-index: 3;
+}
+
+.aside__list {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+@media all and (max-width: 920px) {
+  .aside{
+    margin-top: 180px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+
+  .aside__list{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.aside__item {
+  border-radius: 5px;
+  width: 160px;
+  height: 110px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  margin: 0 0 15px 0;
+  background: #fff;
+  cursor: pointer;
+  @include transition(all 0.2s linear);
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.aside__item:hover, .aside__item--active {
+  box-shadow: 0px 8px 20px #a5a7aa;
+}
+
+.page__items {
+  width: 100%;
+}
+
+.page__item--hidden {
+  display: none;
+}
+
+.page__title {
+  color: #282951;
+  margin: 0 0 45px 35px;
+  font-family: montserratbold;
+  background: url('../img/title-bg.png') no-repeat 0 0;
+  min-height: 145px;
+  min-width: 188px;
+  padding: 20px 0 0 25px;
+  position: relative;
+  z-index: 1;
+
+  .sivashov__title{
+    margin-left: -15px;
+
+    span {
+      margin-left: 15px;
+    }
+  }
+
+  h1 {
+    font-size: 48px;
+    margin: 0 0 20px -40px;
+
+    span {
+      color: #e85252;
+    }
+  }
+
+  .affiliate__title,
+  .cms__title,
+  .crm__title {
+    margin-left: 0px;
+  }
+
+  h2 {
+    font-size: 18.51px;
+    margin-left: -40px;
+  }
+}
+
+
+@media all and (max-width: 640px) {
+  .page__title {
+      span {
+        font-size: 0.9em;
+      }
+    }
+
+  .aside__ico{
+    background-position: center !important;
+    background-size: contain !important;
+  }
+
+  .aside__item{
+    height: 60px;
+    width: 75px;
+    padding: 10px;
+
+    .aside__ico--hwa {
+      width: 70px;
+      height: 30px;
+      margin: 0 0 5px 0;
+    }
+
+    p {
+      text-align: center;
+      font-size: 8px;
+    }
+  }
+}
+
+//.wrapper404{
+//  margin: 137px auto 0;
+//  text-align: center;
+//  width: 100%;
+//  height: auto;
+//  margin-bottom: 200px;
+//}
+//
+//.page404{
+//  text-align: center;
+//width: 100%;
+//height: 25px;
+//color: #282951;
+//font-family: montserratmedium;
+//font-size: 24px;
+//font-weight: 700;
+//line-height: 36px;
+///* Text style for "This page" */
+//  letter-spacing: 0.46px;
+//  margin-top: 40px;
+//}
+//
+//.bg404{
+//  display: inline-block;
+//  width: 572px;
+//  height: 199px;
+//  background: url('../img/404.png') no-repeat 0 0;
+//}
+//
+//.go-to-404{
+//  margin: 69px auto;
+//  display: block;
+//  max-width: 580px;
+//  height: 64px;
+//  line-height: 64px;
+//  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.3);
+//  text-transform: uppercase;
+//  border-radius: 6px;
+//  background-color: #ff5151;
+//  color: #ffffff;
+//  font-family: montserratmedium;
+//  font-size: 22px;
+//  font-weight: 700;
+//  letter-spacing: 1.1px;
+//  text-decoration: none;
+//}
+//
+//.footer404{
+//  position: fixed;
+//  height: auto;
+//  bottom: 0;
+//  width: 100%;
+//}
+

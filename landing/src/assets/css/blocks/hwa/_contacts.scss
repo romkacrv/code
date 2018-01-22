@@ -1,0 +1,172 @@
+.hwa-contacts {
+  overflow-x: hidden;
+  padding: 40px 0 0 105px;
+  @include clearfix;
+
+  h2 {
+    font-size: 30px;
+    font-family: montserratsemibold;
+    line-height: 40px;
+  }
+}
+
+.hwa-contacts__info {
+  width: 325px;
+  float: left;
+
+  h2 {
+    margin: 0 0 95px 0;
+  }
+
+  p {
+    margin: 0 0 20px 0;
+    line-height: 30px;
+
+    + p {
+      margin: 0;
+    }
+  }
+}
+
+.hwa-contacts__form {
+  float: right;
+  max-width: 580px;
+
+  .error{
+    font-family: montserratmedium;
+    font-size: 13.3333px;
+    color: #ff5151;
+  }
+
+  h2 {
+    margin: 0 0 75px 0;
+  }
+
+  input[type="text"], textarea {
+    border: 0;
+    background: none;
+    width: 100%;
+    padding: 15px 5px;
+    border-bottom: 2px solid #c4c7cd;
+  }
+
+  input[type="text"].error, textarea.error {
+    border-bottom: 2px solid #ff5151;
+  }
+
+  .form-item {
+    margin: 0 0 50px 0;
+    vertical-align: top;
+    position: relative;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .form-item-text {
+    display: inline-block;
+    width: 267px;
+    margin: 0 40px 0 0;
+
+    &:nth-child(even) {
+      margin: 0 0 50px 0;
+    }
+  }
+
+  .form-actions {
+
+  }
+
+  .form-submit {
+    border: 0;
+    background: none;
+    font-family: montserratbold;
+    text-transform: uppercase;
+    background: #ff5151;
+    border-radius: 5px;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    box-shadow: 0px 8px 20px #a5a7aa;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  #firstName-error,
+  #lastName-error,
+  #email-error,
+  #phone-error,
+  #message-error
+  {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+  }
+}
+
+@media all and (max-width: 1190px) {
+  .hwa-contacts {
+    padding-right: 20px;
+  }
+
+  .hwa-contacts__form{
+    float: none;
+    margin: 40px 0 0 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hwa-contacts__info h2 {
+    margin: 0 0 35px 0;
+  }
+
+  .hwa-contacts__info{
+    float: none;
+    margin: 0px;
+  }
+
+  .hwa-contacts__form .form-item-text {
+    width: 46%;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .hwa-contacts {
+    padding: 170px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .hwa-contacts {
+    padding: 100px 20px 0 20px;
+  }
+
+  .hwa-contacts__form {
+    float: none;
+    margin: 40px 0 0 0;
+    width: 100%;
+    max-width: 100%;
+
+    h2 {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  .hwa-contacts__form .form-item-text:nth-child(even) {
+    margin: 0 0 0 0;
+  }
+
+  .hwa-contacts__form .form-item-text{
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+  }
+
+  .hwa-contacts__form .form-item-textarea{
+    padding-top: 15px;
+  }
+
+}

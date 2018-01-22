@@ -1,0 +1,387 @@
+.hwa-tech {
+  margin: 30px 0 0 0;
+}
+
+.hwa-tech__list {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hwa-tech__item {
+  margin: 0 0 35px 35px;
+  width: 140px;
+  height: 108px;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  background: url('../../img/message-bg.png') no-repeat 0 0;
+  font-size: 20px;
+  font-family: montserratsemibold;
+}
+
+.hwa-tech__ico {
+  margin: 0 0 5px 0;
+}
+
+.hwa-tech__ico--react {
+  width: 42px;
+  height: 37px;
+  background: url('../../img/ico-hwa-tech-react.png') no-repeat 0 0;
+}
+
+.hwa-tech__ico--redux {
+  background: url('../../img/ico-hwa-tech-redux.png') no-repeat 0 0;
+  width: 40px;
+  height: 37px;
+}
+
+.hwa-tech__ico--angular {
+  background: url('../../img/ico-hwa-tech-angular.png') no-repeat 0 0;
+  width: 35px;
+  height: 37px;
+}
+
+.hwa-tech__ico--backbone {
+  background: url('../../img/ico-hwa-tech-backbone.png') no-repeat 0 0;
+  width: 31px;
+  height: 37px;
+}
+
+.hwa-tech__ico--webpack {
+  background: url('../../img/ico-hwa-tech-webpack.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--docker {
+  background: url('../../img/ico-hwa-tech-docker.png') no-repeat 0 0;
+  width: 53px;
+  height: 34px;
+}
+
+.hwa-tech__ico--mysql {
+  background: url('../../img/ico-hwa-tech-mysql.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--passport {
+  background: url('../../img/ico-hwa-tech-passport.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--celery {
+  background: url('../../img/ico-hwa-tech-celery.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--knex {
+  background: url('../../img/ico-hwa-tech-knex.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--jenkins {
+  background: url('../../img/ico-hwa-tech-jenkins.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--node {
+  background: url('../../img/ico-hwa-tech-node.png') no-repeat 0 0;
+  width: 56px;
+  height: 35px;
+}
+
+.hwa-tech__ico--express {
+  background: url('../../img/ico-hwa-tech-express.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--koa {
+  background: url('../../img/ico-hwa-tech-koa.png') no-repeat 0 0;
+  width: 54px;
+  height: 29px;
+}
+
+.hwa-tech__ico--jest {
+  background: url('../../img/ico-hwa-tech-jest.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--chai {
+  background: url('../../img/ico-hwa-tech-chai.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--mocha {
+  background: url('../../img/ico-hwa-tech-mocha.png') no-repeat 0 0;
+  width: 37px;
+  height: 37px;
+}
+
+.hwa-tech__ico--karma {
+  background: url('../../img/ico-hwa-tech-karma.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--ramda {
+  background: url('../../img/ico-hwa-tech-ramda.png') no-repeat 0 0;
+  width: 37px;
+  height: 37px;
+}
+
+.hwa-tech__ico--lodash {
+  background: url('../../img/ico-hwa-tech-lodash.png') no-repeat 0 0;
+  width: 41px;
+  height: 37px;
+}
+
+.hwa-tech__ico--underscore {
+  background: url('../../img/ico-hwa-tech-underscore.png') no-repeat 0 0;
+  width: 60px;
+  height: 10px;
+}
+.hwa-tech__ico--underscore + p{
+  font-size: 18px;
+}
+
+
+.hwa-tech__ico--sequelize {
+  background: url('../../img/ico-hwa-tech-sequelize.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--redis {
+  background: url('../../img/ico-hwa-tech-redis.png') no-repeat 0 0;
+  width: 44px;
+  height: 38px;
+}
+
+.hwa-tech__ico--mongo {
+  background: url('../../img/ico-hwa-tech-mongo.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--postgresql {
+  background: url('../../img/ico-hwa-tech-postgresql.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--sqlalchemy {
+  background: url('../../img/ico-hwa-tech-sqlalchemy.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--sqlalchemy + p{
+  margin-top: -13px;
+}
+
+.hwa-tech__ico--flask {
+  background: url('../../img/ico-hwa-tech-flask.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--waterline {
+  background: url('../../img/ico-hwa-tech-waterline.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--jwt {
+  background: url('../../img/ico-hwa-tech-jwt.png') no-repeat 0 0;
+  width: 63px;
+  height: 26px;
+}
+
+.hwa-tech__ico--git {
+  background: url('../../img/ico-hwa-tech-git.png') no-repeat 0 0;
+  width: 37px;
+  height: 37px;
+}
+
+.hwa-tech__ico--rabbitmq {
+  background: url('../../img/ico-hwa-tech-rabbitmq.png') no-repeat 0 0;
+  width: 37px;
+  height: 37px;
+  background-size: contain;
+}
+
+.hwa-tech__ico--should {
+  background: url('../../img/ico-hwa-tech-should.png') no-repeat 0 0;
+  width: 64px;
+  height: 25px;
+}
+
+.hwa-tech__ico--selenium {
+  background: url('../../img/ico-hwa-tech-selenium.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--grunt {
+  background: url('../../img/ico-hwa-tech-grunt.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--firebird {
+  background: url('../../img/ico-hwa-tech-firebird.png') no-repeat 0 0;
+  width: 36px;
+  height: 37px;
+}
+
+.hwa-tech__ico--jquery {
+  background: url('../../img/ico-hwa-tech-jquery.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--eslint {
+  background: url('../../img/ico-hwa-tech-eslint.png') no-repeat 0 0;
+  width: 35px;
+  height: 35px;
+}
+
+.hwa-tech__ico--ajax {
+  background: url('../../img/ico-hwa-tech-ajax.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--javascript {
+  background: url('../../img/ico-hwa-tech-javascript.png') no-repeat 0 0;
+  width: 37px;
+  height: 37px;
+}
+
+.hwa-tech__ico--html {
+  background: url('../../img/ico-hwa-tech-html.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--cakephp {
+  background: url('../../img/ico-hwa-tech-cakephp.png') no-repeat 0 0;
+  width: 48px;
+  height: 37px;
+}
+
+.hwa-tech__ico--symphony {
+  background: url('../../img/ico-hwa-tech-symphony.png') no-repeat 0 0;
+  width: 35px;
+  height: 35px;
+}
+
+.hwa-tech__ico--php {
+  background: url('../../img/ico-hwa-tech-php.png') no-repeat 0 0;
+  width: 64px;
+  height: 33px;
+}
+
+.hwa-tech__ico--django {
+  background: url('../../img/ico-hwa-tech-django.png') no-repeat 0 0;
+  width: 35px;
+  height: 35px;
+}
+
+.hwa-tech__ico--prettier {
+  background: url('../../img/ico-hwa-tech-prettier.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--awc-ec2 {
+  background: url('../../img/ico-hwa-tech-awc-ec2.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--interbase {
+  background: url('../../img/ico-hwa-tech-interbase.png') no-repeat 0 0;
+  width: 37px;
+  height: 37px;
+}
+
+.hwa-tech__ico--sails {
+  background: url('../../img/ico-hwa-tech-sails.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--vagrant {
+  background: url('../../img/ico-hwa-tech-vagrant.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+
+.hwa-tech__ico--python {
+  background: url('../../img/ico-hwa-tech-python.png') no-repeat 0 0;
+  width: 37px;
+  height: 37px;
+}
+
+
+.hwa-tech__ico--autolt {
+  background: url('../../img/ico-hwa-tech-autolt.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--zend {
+  background: url('../../img/ico-hwa-tech-zend.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--phalcon {
+  background: url('../../img/ico-hwa-tech-phalcon.png') no-repeat 0 0;
+  width: 36px;
+  height: 36px;
+}
+
+.hwa-tech__ico--yii {
+  background: url('../../img/ico-hwa-tech-yii.png') no-repeat 0 0;
+  width: 32px;
+  height: 37px;
+}
+
+.hwa-tech__ico--laravel {
+  background: url('../../img/ico-hwa-tech-laravel.png') no-repeat 0 0;
+  width: 53px;
+  height: 36px;
+}
+
+@media (max-width: 920px) {
+  .hwa-tech {
+    padding: 170px 30px 0 30px;
+  }
+
+  .hwa-tech__item {
+    margin: 0 0 35px 0px;
+  }
+}
